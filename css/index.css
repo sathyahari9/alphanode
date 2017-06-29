@@ -1,0 +1,198 @@
+body{
+	margin: 0;
+	padding: 0;
+	overflow-x: none;
+}
+.section{
+	padding: 12em 8em 8em;
+}
+.head h1{
+	color: #222;
+	font-size: 4.2em;
+	font-family: 'Questrial', sans-serif;
+	line-height: 1em;
+	letter-spacing: .0008em;
+	font-weight: 300;
+}
+.button{
+	border:2px solid rgba(52, 73, 94,1.0);
+	color: rgba(52, 73, 94,1.0);
+	font-size: .9em;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 0;
+	transition: all ease .4s;
+}
+.button:hover{
+	border:2px solid rgba(52, 73, 94,1.0);
+	box-shadow: inset 0 -45px 0 rgba(52, 73, 94,1.0);
+	color: #fff;
+}
+.green{
+	color: #8cc63f;
+}
+.about{
+	background: rgba(52, 73, 94,1.0);
+	padding: 10em 10em 6em;
+	text-align: center;
+	color: #fff;
+}
+.about h3{
+	color: #fff;
+}
+.about p{
+	font-size: 1.2em;
+}
+.events{
+	padding: 6em 8em 8em;
+}
+.circle{
+	background: rgba(52, 73, 94,1.0);
+	height: 150px;
+	width: 150px;
+	border-radius: 100%;
+	line-height: 150px;
+	text-align: center;
+	color: #fff;
+	display: block;
+}
+.logo{
+	position: absolute;
+	top: 40vh;
+	right: 15vh;
+	transform: translateY(-50%);
+	height: 260px;
+	width: 260px;
+}
+.footer{
+	background: #222;
+	padding: 6em 4em 5em;
+}
+.social{
+	height: 50px;
+	width: 250px;
+	display: flex;
+	flex-direction: row;
+}
+.social-itm{
+	opacity: .7;
+	height: 45px;
+	width: 45px;
+	background: #fff;
+	color: #222;
+	text-align: center;
+	line-height: 45px;
+	font-size: 1.1em;
+	margin-right: 30px;
+	border-radius: 50px;
+	transition: all ease .5s;
+	cursor: pointer;
+}
+.social-itm:hover{
+	opacity: 1;
+}
+/* ANIMATIONS KTHNX*/
+.show{
+	animation: show 2s;
+	animation-iteration-count: 1;
+}
+.show-early{
+	animation: showearly 1s;
+	animation-iteration-count: 1;
+}
+.show-late{
+	animation: showlate 2.7s;
+	animation-iteration-count: 1;
+}
+
+@keyframes showearly{
+	0%{
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes show{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes showlate{
+	0%{
+		opacity: 0;
+	}
+	75%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.swipe{
+	animation: swipe 3.8s;
+	animation-iteration-count: 1;
+}
+@keyframes swipe{
+	0%{
+		opacity: 0;
+		transform: scale(.7);
+	}
+	75%{
+		opacity: 0;
+		transform: scale(.7);
+	}
+	85%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+/* 
+media-queries
+*/
+@media(max-width: 900px){
+	.logo{
+		display: none;
+	}
+}
+@media(max-width: 750px){
+	.events{
+	padding: 6em 4em 6em;
+}
+}
+@media(max-width: 650px){
+	.events{
+		padding: 6em 7em 6em;
+	}
+	.about{
+		padding: 6em 7em 6em;
+	}
+}
+@media(max-width: 600px){
+
+	.head{
+		padding:12em 4em 8em;;
+	}
+}
+@media(max-width: 500px){
+	.head{
+		padding: 10em 3em 8em;
+	}
+	.head h1{
+		font-size: 3.4em;
+	}
+	.about{
+		padding: 6em 4em 6em;
+	}
+}
